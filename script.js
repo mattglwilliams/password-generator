@@ -12,6 +12,7 @@ function generatePassword() {
     }
     var specialChars = confirm("Select 'OK' if you would like to include special characters");
     var numbers = confirm("Select 'OK' if you would like to include numbers")
+    var uppercase = confirm("Select 'OK' if you would like to include uppercase letters")
 }
 
 
