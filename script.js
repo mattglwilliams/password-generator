@@ -1,6 +1,17 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+function generatePassword() {
+    var passwordLength
+    while (true) {
+      passwordLength = prompt("Choose the length of your password. This needs to be between 8 - 128");
+      if (passwordLength >= 8 && passwordLength <= 128) {
+        break;
+      }
+      alert("Please select a number between 8 - 128");
+    }
+}
+
 // Write password to the #password input
 function writePassword() {
     var password = generatePassword();
