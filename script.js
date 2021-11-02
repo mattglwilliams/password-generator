@@ -11,6 +11,7 @@ function generatePassword() {
       alert("Please select a number between 8 - 128");
     }
     var specialChars = confirm("Select 'OK' if you would like to include special characters");
+    var numbers = confirm("Select 'OK' if you would like to include numbers")
 }
 
 
