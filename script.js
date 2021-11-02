@@ -10,7 +10,9 @@ function generatePassword() {
       }
       alert("Please select a number between 8 - 128");
     }
+    var specialChars = confirm("Select 'OK' if you would like to include special characters");
 }
+
 
 // Write password to the #password input
 function writePassword() {
