@@ -1,8 +1,12 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+var sym = "!@#$%^&*=-_"
+var num = "1234567890"
+var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var lower = "abcdefghijklmnopqrstuvwxyz"
 
 function generatePassword() {
-    var passwordLength
+    var passwordChar = "";
     while (true) {
       passwordLength = prompt("Choose the length of your password. This needs to be between 8 - 128");
       if (passwordLength >= 8 && passwordLength <= 128) {
@@ -10,10 +14,15 @@ function generatePassword() {
       }
       alert("Please select a number between 8 - 128");
     }
-    var specialChars = confirm("Select 'OK' if you would like to include special characters");
-    var numbers = confirm("Select 'OK' if you would like to include numbers")
-    var uppercase = confirm("Select 'OK' if you would like to include uppercase letters")
-    var lowercase = confirm("Select 'OK' if you would like to include lowercase letters")
+    specialChars = confirm("Select 'OK' if you would like to include special characters");
+    numbers = confirm("Select 'OK' if you would like to include numbers");
+    uppercase = confirm("Select 'OK' if you would like to include uppercase letters");
+    lowercase = confirm("Select 'OK' if you would like to include lowercase letters");
+
+    if (!symbols, !numbers, !uppercase, !lowercase) {
+      alert("You must choose at least one criteria, please try again.");
+      return null;
+    }
 }
 
 
