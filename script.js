@@ -36,6 +36,8 @@ function generatePassword() {
     if (lowercase) {
       passwordChar += lower;
     }
+
+    var pwd = "";
 }
 
 
