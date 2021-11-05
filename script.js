@@ -23,6 +23,19 @@ function generatePassword() {
       alert("You must choose at least one criteria, please try again.");
       return null;
     }
+
+    if (symbols) {
+      passwordChar += sym;
+    }
+    if (numbers) {
+      passwordChar += num;
+    }
+    if (uppercase) {
+      passwordChar += upper;
+    }
+    if (lowercase) {
+      passwordChar += lower;
+    }
 }
 
 
